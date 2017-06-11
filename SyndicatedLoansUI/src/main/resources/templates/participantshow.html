@@ -40,16 +40,16 @@
 						<th>AssetID</th>
 						<th>SharePercent</th>
 						<th>ShareAmount</th>
-						<th>SyndicatedAmount</th>
+						<th>SettlementFees</th>
 						<th></th>
 					</tr>
 				</thead>
 				<tbody>
 				    <tr th:each="asset : ${participant.AssetList}">
-				    	<td th:text="${asset.id}"></td>
+				    	<td th:text="${asset.loanId}"></td>
 				    	<td th:text="${asset.share}"></td>
 				    	<td th:text="${asset.shareAmount}"></td>
-				    	<td th:text="${asset.shareAmount}"></td>
+				    	<td th:text="${asset.settlementFees}"></td>
 				    </tr>
 				</tbody>
 			</table>

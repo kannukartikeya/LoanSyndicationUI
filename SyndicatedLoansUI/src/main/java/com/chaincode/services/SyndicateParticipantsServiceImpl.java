@@ -16,7 +16,6 @@ import com.chaincode.domain.Loan;
 import com.chaincode.domain.Params;
 import com.chaincode.domain.Participant;
 import com.chaincode.domain.Product;
-import com.chaincode.repositories.ProductRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -29,8 +28,8 @@ public class SyndicateParticipantsServiceImpl implements SyndicateParticipantsSe
 
     
     public SyndicateParticipantsServiceImpl (){
-    	this.chainCode = "2a566339e2d712fad50f3e0c50fa7ce9cc0af566d3f498c728b99f100cd3c67f51ebddf3c0563e2d6e52d4479e28a894ac441cdf49aa38e7a0e275a060af2cf6";
-    	this.url = "https://febfec4cd1c248b186e4595b5b541ec7-vp0.us.blockchain.ibm.com:5003/chaincode";
+    	this.chainCode = "4b987ca9c261d4899eef92b1d93662f2074124ff89a6f3d33d49a3de3f640fd4ca476cd7b0447c013abf2bf2b9b992518090dc65ead481e211c4e3e59b49ced5";
+    	this.url = "https://36615276e07f4e5eb6a9915ec8432e62-vp0.us.blockchain.ibm.com:5001/chaincode";
     }
 
   

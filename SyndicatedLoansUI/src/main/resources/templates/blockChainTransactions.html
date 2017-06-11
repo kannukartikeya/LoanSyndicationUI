@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+
+    <title>Transaction Details</title>
+
+    <!--/*/ <th:block th:include="fragments/headerinc :: head"></th:block> /*/-->
+</head>
+<body>
+<div class="container">
+    <!--/*/ <th:block th:include="fragments/header :: header"></th:block> /*/-->
+    <div th:if="${not #lists.isEmpty(blockchainTxns)}">
+        <h2>BlockChain Transaction List</h2>
+        <table class="table table-bordered">
+            <tr>
+                <th>TxnId</th>
+                <th>ChainCodeId</th>
+                <th>PayLoadId</th>
+            </tr>
+            <tr th:each="txn : ${blockchainTxns}">
+                <td th:text="${txn.txid}">Transaction</td>
+                <td th:text="${txn.chaincodeID}">Device Id</td>
+                <td th:text="${txn.payload}">description</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+</body>
+</html>
